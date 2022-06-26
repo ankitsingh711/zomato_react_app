@@ -1,9 +1,10 @@
 import React,{Component} from 'react';
 import axios from 'axios';
 import OrderDisplay from './orderDisplay';
+import Footer from '../../footer'
 
-const url = "http://ankit-zomato-app.herokuapp.com/viewOrder"
-const UpdateUrl = "http://ankit-zomato-app.herokuapp.com/updateOrder"
+const url = "http://ankit-zomato-data.herokuapp.com/viewOrder"
+const UpdateUrl = "http://ankit-zomato-data.herokuapp.com/updateOrder"
 
 class ViewOrder extends Component {
     constructor(){
@@ -18,6 +19,7 @@ class ViewOrder extends Component {
         return(
             <>
             <OrderDisplay orderData={this.state.orders}/>
+            <Footer/>
             </>
         )
     }

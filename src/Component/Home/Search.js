@@ -1,8 +1,9 @@
 import React,{ Component, Fragment } from 'react';
 import './Search.css';
+import {withRouter} from 'react-router-dom'
 
-const url = "https://ankit-zomato-app.herokuapp.com/location"
-const restUrl = "https://ankit-zomato-app.herokuapp.com/restaurant?stateId="
+const url = "https://ankit-zomato-data.herokuapp.com/location"
+const restUrl = "https://ankit-zomato-data.herokuapp.com/restaurants?stateId="
 
 
 
@@ -44,6 +45,7 @@ class Search extends Component{
         console.log(">>>>inside",restId)
         this.props.history.push(`/details?restId=${restId}`)
     }
+
 
     handleCity = (event) => {
         let restId = event.target.value;
@@ -148,4 +150,4 @@ class Search extends Component{
     }
 }
 
-export default (Search);
+export default withRouter(Search);

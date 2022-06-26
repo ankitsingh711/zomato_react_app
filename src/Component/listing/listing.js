@@ -4,8 +4,9 @@ import axios from 'axios';
 import CuisineFilter from '../filters/cuisineFilter'
 import CostFilter from '../filters/costFilter';
 import ListingDisplay from './listingDisplay';
+import Footer from '../../footer';
 
-const restUrl = "https://ankit-zomato-app.herokuapp.com/restaurant?mealtype_id=2"
+const restUrl = "https://ankit-zomato-data.herokuapp.com/restaurants?mealtype_id=2"
 
 class Listing extends Component{
     constructor(props){
@@ -26,6 +27,7 @@ class Listing extends Component{
                 <CuisineFilter restPerCuisine={(data) => {this.setDatPerFilter(data)}}/>
                 <CostFilter restPerCost={(data) => {this.setDatPerFilter(data)}}/>
                 <ListingDisplay listData={this.state.restaurants}/>
+                <Footer/>
             </Fragment>
         )
     }

@@ -3,10 +3,15 @@
     height:300px;
     width:250px;
     margin:2%;
-    box-shadow:10px 10px 20px gray
+    box-shadow:10px 10px 20px gray;
+    border:5px solid grey
 }
 
 .orderItems>img{
-   height:200px;
-   width:100%
+    height:200px;
+    width:100%
+}
+
+.orderItems:hover{
+    transform: scale(1.04);
 }

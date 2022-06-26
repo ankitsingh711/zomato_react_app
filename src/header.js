@@ -73,7 +73,7 @@ class Header extends Component {
         }else{
             return(
                 <Fragment>
-                            <a  style={{color:"black",backgroundColor:"white",width:"150px",}} href="https://github.com/login/oauth/authorize?client_id=9176b4958929e2c28dd6" className="btn btn-light btn-md mx-1">
+                            <a  style={{color:"black",backgroundColor:"white",width:"150px",}} href="https://github.com/login/oauth/authorize?client_id=Iv1.12866c27a72578be" className="btn btn-light btn-md mx-1">
                             Login With Git
                             </a>
                             <Link to="/login" type="button" className="btn btn-light btn-md mx-1" style={{paddingLeft: "2.5rem", paddingRight: "2.5rem",}}>
@@ -119,9 +119,9 @@ class Header extends Component {
     }
 
     componentDidMount(){
-        /*Github User Profil*/
+        /*Github User Profile*/
         if(this.props.location.search){
-            if(this.props.location.search.split('=')[0] === '?code'){
+            if(this.props.location.search.split('=')[0] == '?code'){
                 var code = this.props.location.search.split('=')[1]
             }
             if(code){

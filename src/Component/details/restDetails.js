@@ -2,6 +2,7 @@ import React,{Component, Fragment} from 'react';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import MenuDisplay from './menuDisplay';
+import Footer from '../../footer'
 
 const url = "https://ankit-zomato-data.herokuapp.com/details"
 const menuUrl = "https://ankit-zomato-data.herokuapp.com/menu?"
@@ -35,7 +36,9 @@ class RestDetails extends Component {
         return(
             <Fragment>
                 <div className="card mb-5">
-                <img src={details.restaurant_thumb} className="card-img-top" alt="food" width="300px"/>
+                    <div style={{width:"50%",height:"200px"}} className='container-fluid float-start'>
+                    <img src={details.restaurant_thumb} className="card-img-top" alt="food" />
+                    </div>
                 <img src="https://www.starpng.com/public/uploads/preview/5-star-rating-png-21573998074syeo5vib9a.png" alt="star" width="150px"/>
                 <div className="card-body">
                     <h5 className="card-title">{details.restaurant_name}</h5>
@@ -63,6 +66,7 @@ class RestDetails extends Component {
                     <MenuDisplay menudata={this.state.menuList}
                     finalOrder={(data) => {this.addToCart(data)}}/>
                 </div>
+                <Footer/>
             </Fragment>
         )
     }

@@ -55,10 +55,7 @@ const ListingDisplay = (props) => {
                                         </div>
                                         <h6 className="text-success">Free shipping</h6>
                                         <div className="d-flex flex-column mt-4">
-                                        <button className="btn btn-primary btn-sm" type="button">Order</button>
-                                        <button className="btn btn-outline-primary btn-sm mt-2" type="button">
-                                            Add to wishlist
-                                        </button>
+                                        <Link to={`/details?restId=${item.restaurant_id}`} className="btn btn-primary btn-sm" type="button">Visit</Link>
                                         </div>
                                     </div>
                                     </div>
@@ -85,7 +82,7 @@ const ListingDisplay = (props) => {
                                     <div className="row">
                                     <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                                         <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                                        <img src="..." className="card-img-top" alt="name"/>
+                                        <img src="https://www.originalstyle.com/imagecache/050b086f-768a-4adf-8d3f-a7135b71f604-548-548.jpg" className="card-img-top" alt="name"/>
                                         <Link to="/">
                                             <div className="hover-overlay">
                                             <div className="mask" style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
@@ -142,7 +139,7 @@ const ListingDisplay = (props) => {
                         <div className="row">
                         <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                             <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                            <img src="..." className="card-img-top" alt="name"/>
+                            <img src="https://www.originalstyle.com/imagecache/050b086f-768a-4adf-8d3f-a7135b71f604-548-548.jpg" className="card-img-top" alt="name"/>
                             <Link to="/">
                                 <div className="hover-overlay">
                                 <div className="mask" style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
@@ -200,7 +197,7 @@ const ListingDisplay = (props) => {
                         <div className="row">
                         <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                             <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                            <img src="..." className="card-img-top" alt="name"/>
+                            <img src="https://www.originalstyle.com/imagecache/050b086f-768a-4adf-8d3f-a7135b71f604-548-548.jpg" className="card-img-top" alt="name"/>
                             <Link to="/">
                                 <div className="hover-overlay">
                                 <div className="mask" style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
@@ -258,7 +255,7 @@ const ListingDisplay = (props) => {
                         <div className="row">
                         <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                             <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                            <img src="..." className="card-img-top" alt="name"/>
+                            <img src="https://www.originalstyle.com/imagecache/050b086f-768a-4adf-8d3f-a7135b71f604-548-548.jpg" className="card-img-top" alt="name"/>
                             <Link to="/">
                                 <div className="hover-overlay">
                                 <div className="mask" style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
@@ -316,7 +313,7 @@ const ListingDisplay = (props) => {
                         <div className="row">
                         <div className="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
                             <div className="bg-image hover-zoom ripple rounded ripple-surface">
-                            <img src="..." className="card-img-top" alt="name"/>
+                            <img src="https://www.originalstyle.com/imagecache/050b086f-768a-4adf-8d3f-a7135b71f604-548-548.jpg" className="card-img-top" alt="name"/>
                             <Link to="/">
                                 <div className="hover-overlay">
                                 <div className="mask" style={{backgroundColor: "rgba(253, 253, 253, 0.15)"}}></div>
